@@ -1,7 +1,6 @@
 /*
 * main.tf
 */
-
 provider "aws" {
   region = ""
 }
@@ -48,3 +47,7 @@ module "vpc" {
   # Assign IPv6 address on database subnet, must be disabled to change IPv6 CIDRs. This is the IPv6 equivalent of map_public_ip_on_launch
   database_subnet_assign_ipv6_address_on_creation = false
 }
+
+provider "aws" {}
+
+provider "aws" {}
